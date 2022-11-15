@@ -1,0 +1,262 @@
+
+     
+    *{
+        margin: 0;padding: 0;
+        list-style: none; 
+        font-family: YuGothic,游ゴシック,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif;
+    }
+    .nav-menu .info .nav-txt{
+        font-family: YuMincho,游明朝,Times New Roman,
+        Hiragino Mincho ProN,
+        HGS明朝B,ＭＳ Ｐ明朝,serif;
+        font-size: 12px;
+    }
+    body{
+        background-color:o #FAFBFB;
+    }
+
+    .nav{
+        width: 100%;
+        height: 80px;
+        display: flex;
+    }
+    .nav-logo{
+        width: 30%;
+        height: 80px;
+        margin-left: 20px;
+    }
+    .nav-logo img{
+        width: 80%;
+        height: 90%;
+    }
+    .nav-menu{
+        width: 70%;
+        height: 80px;
+        /* margin: 0 auto;   */
+     }
+     .nav-menu a{
+        text-decoration: none;
+        color: #363636; 
+        transition: 0.5s;
+     }
+     .nav-menu a:hover{
+        color: #888888;
+     }
+     /* 選項區 */
+     .nav-menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+     }
+     ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+     }
+     .info{
+        width: 500px;       
+     }
+     .login{
+        width: 300px;
+        cursor: pointer;
+     }
+     .login .login-txt{
+         font-size: 14px;
+         margin-left: 10px;
+     }
+     .login .cart{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #A15D60;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.4s;
+     }
+     .cart:hover{
+        background-color: #363636;
+     }
+     .btn{
+        position: relative;
+     }
+     .btn-txt{
+         font-size: 4px;
+         position: absolute;
+         top: 12px;
+         left: 8px;
+         color: #FFF;  
+     }
+
+    /* 主頁 */
+    .main{
+        width: 90%;
+        height: 100vh;
+
+        margin: auto;
+        display: flex;
+    }
+    .content-P{
+        width: 60%;
+        height: 100vh;
+    }
+    /* 大型圖片區 */
+    .content-P .large-box{
+        width: 650px;
+        height: 550px;
+        position: absolute;
+        top: 0;
+        right: -80px;
+        display: none;
+        overflow: hidden;
+    }
+    .content-P .large-box img{
+        /* width: 100%;
+        height: 100%;  */
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9;
+    }
+    /* 中型圖片區 */
+
+    .content-P .medium-box{
+        width: 550px;
+        height: 450px;
+        margin: 50px auto;
+        position: relative;
+    }
+    .medium-box img{
+        width: 100%;
+        height: 100%;
+    }
+
+   .medium-box #movebox{      /* <--- 游標 */
+        width: 150px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.242);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        cursor: move;
+        display: none;
+        z-index: 99;
+    }
+
+    /* 小型圖片區 */
+    .content-P ul{
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        display: flex;   
+    }
+    .content-P ul li{
+        width: 100px;
+        height: 90px;
+        margin: 5px;
+        cursor: pointer;
+        
+    }
+    .content-P li img{
+        width: 100%;
+        height: 100%;
+        transition: 0.5s; 
+    }
+    .current{
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px 1px rgb(177, 177, 177);
+    }
+
+    /* 右側：文字介紹及下單區 */
+    .content-txt{
+        width: 40%;
+        height: 100vh;
+        /* background-color: coral; */
+    }
+    .content-txt>.content-main{
+        margin: 30px auto;
+        width: 90%;
+        letter-spacing: 1px;
+    }
+    .content-main>.marg{
+        margin-top: 15px;
+    }
+    .content-main .price span{
+        font-size: 14px;
+    }
+    .content-main .price{
+        padding-bottom: 8px;
+        border-bottom: 1px solid #E5E7E9;
+    }
+    .table-list{
+        display: flex;
+        width: 500px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .table-title{
+        font-size: 14px;
+        font-weight: bold;
+        width: 50px;
+    }
+    .table-txt{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .select-box{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+    }
+    .select-box select{
+        width: 20%;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 30px;
+      
+    }
+    .bt{
+        width: 50%;
+        height: 50px;   
+        background-color: #A15D60;
+        color: #EFEFEF;
+        font-weight: 200;
+        cursor:pointer;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+    .bt:hover{
+        background-color: #363636;
+    }
+    .detail-link{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .link-box{
+        width: 45%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        cursor: pointer;
+        transition:  0.5s;
+    }
+    .link-box:hover{
+       background-color: #363636;
+       color: #FFF;
+    }
+    .item-a{
+        background-color: #EFEFEF;
+    }
+    .item-b{
+        background-color: #EFEFEF
+    }

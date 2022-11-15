@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>放大鏡demo</title>
+    
+</head>
+<body>
+    <!-- LOGO及menu -->
+    <div class="nav">
+        <!-- LOGO -->
+        <div class="nav-logo">
+            <img src="logo.svg" alt="">
+        </div>
+        <!-- menu -->
+        <div class="nav-menu">
+            <!-- 1.ul -->
+            <ul class="info">
+                <li><a href="/products/list.php?category_id=7"><span class="nav-txt">仕出し料理・お弁当のご案内</span></a></li>
+                <li><a href="https://www.yaohiko.co.jp/committed/"><span class="nav-txt">こだわり</span></a></li>
+                <li><a href="https://www.yaohiko.co.jp/terms/"><span class="nav-txt">ご利用について</span></a></li>
+                <li><a href="https://www.yaohiko.co.jp/faq/"><span class="nav-txt">よくあるご質問</span></a></li>
+            </ul>
+            <!-- 2.ul-->
+            <ul class="login">
+                <li><img src="signup.svg"><span class="login-txt">会員登録</span></li>
+                <li><img src="login.svg"><span class="login-txt">ログイン</span></li>
+                <li class="cart">
+                    <div class="btn">
+                        <img src="cart.svg">
+                        <span class="btn-txt">カート</span>
+                    </div>    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主頁介紹 -->
+    <div class="main">
+        <!-- 左側：產品展示區 -->
+        <div class="content-P">
+            <div id="lbox" class="large-box">
+                <img id="lboximg" src="img/a01.jpg">
+            </div>
+            <div id="mbox" class="medium-box">
+                <img id="mboximg" src="img/a01.jpg">
+                <div id="movebox" class="shadow"></div>
+            </div>
+            <ul id="sbox">
+                <li><img class="current" src="img/a01.jpg" alt=""></li>
+                <li><img src="img/a02.jpg" alt=""></li>
+                <li><img src="img/a03.jpg" alt=""></li>
+                <li><img src="img/a04.jpg" alt=""></li>
+                <li><img src="img/a05.jpg" alt=""></li>
+                <li><img src="img/a06.jpg" alt=""></li>
+            </ul>
+        </div>
+        <!-- 右側：文字介紹及下單區 -->
+        <div class="content-txt">
+            <div class="content-main">
+                <div class="title marg">
+                    <h1>嵯峨野(お持ち帰り用容器入り)</h1>
+                    
+                </div>
+                <div class="price marg">
+                    <h2>3,240 円（税込） <span>3,000円（税抜）</span></h2>
+                </div>
+                <div class="product marg">
+                    <p>重厚感のある器に、海老と季節野菜の天ぷらなど旬の食材をふんだんに盛り込みました。
+                        季節の掛け紙にもこだわり、シーンを選ばずご利用いただけます。
+                        こちらの商品にはオリジナル紙袋が付属しますのでご贈答用にもおすすめです。
+                    </p>
+                </div>
+                <div class="table marg">
+                    <!-- 1. -->
+                    <div class="table-list">
+                        <div class="table-title">献立</div>
+                        <div class="table-txt">
+                             お料理の内容は春の献立でお届けいたします。
+                             <br>
+                             季節により献立は変更いたします。
+                        </div>
+                    </div>
+                    <!-- 2. -->
+                    <div class="table-list">
+                        <div class="table-title">その他</div>
+                        <div class="table-txt">
+                            お持ち帰り容器は基本的に回収は行っておりません。
+                             <br>
+                            回収が必要の場合はお電話にてお申し付けください。
+                             <br>
+                            ※オリジナル紙袋付き
+                        </div>
+                    </div>
+                    <!-- 3. -->
+                    <div class="table-list">
+                        <div class="table-title">ご案内</div>
+                        <div class="table-txt">
+                             下記の日程で切り替わりますので、ご了承くださいますよう
+                             <br>
+                             お願いいたします。
+                             <br>
+                             夏メニュー　5月20日〜8月31日
+                             <br>
+                             秋メニュー　9月1日〜11月1日　
+                        </div>
+                    </div>
+
+                </div>
+                <div class="marg select-box">
+                    <div class="qty">数量</div>
+                    <select name="" id="">
+                    <option value="num">1</option>
+                    <option value="num">2</option>
+                    <option value="num">3</option>
+                    <option value="num">4</option> 
+                    </select>
+                    <!-- 按鈕 -->
+                    <div id="btn" class="bt marg">
+                        <div class="bt-txt">
+                            <p>買い物カゴに入れる</p>
+                        </div>
+                        <div class="bt-icon">
+                            <i class="material-icons">shopping_cart</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-link">
+                    <div class="link-box item-a">
+                        <div class="map"><i class="material-icons">local_shipping</i></div>
+                        <div class="link-txt">配送地域について</div>
+                    </div>
+                    <div class="link-box item-b">
+                        <div class="map"><i class="material-icons">local_phone</i></div>
+                        <div class="link-txt">ご注文の流れ</div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+    function $(id){
+        return document.getElementById(id);
+    }
+      window.onload = function () {
+            let lBox = $('lbox');
+            let lBoxImg = $('lboximg');
+            let mBox = $('mbox');
+            let mBoxImg = $('mboximg');
+            let view = $('movebox');
+            let sBox = $('sbox');
+            let sBoxImg = sBox.querySelectorAll('img');
+
+            for (let i = 0; i < sBoxImg.length; i++) {
+                sBoxImg[i].onmouseenter = function () {
+
+                    for (var j = 0; j < sBoxImg.length; j++) {
+                        sBoxImg[j].className = ''
+                    }
+                    this.className = 'current';
+                    mBoxImg.src = this.src.slice('m' + this.src.indexOf('-'));
+                    lBoxImg.src = this.src.slice('l' + this.src.indexOf('-'));
+                    // console.log(this.src.slice(this.src.indexOf('-')));
+                }
+                mBox.onmouseenter = function () {
+                    view.style.display = "block";
+                    lBox.style.display = 'block';
+                }
+                mBox.onmouseleave = function () {
+                    view.style.display = "none";
+                    lBox.style.display = 'none';
+                }
+                mBox.onmousemove = function (ev) {
+                    let oEvent = ev || event;
+                    let iL = oEvent.clientX - view.offsetWidth / 2 - mBox.offsetLeft;
+                    let iT = oEvent.clientY - view.offsetHeight / 2 - mBox.offsetTop;
+                    let ilMax = mBox.offsetWidth - view.offsetWidth;
+                    let itMax = mBox.offsetHeight - view.offsetHeight;
+                    if (iL < 0) {
+                        iL = 0;
+                    } else if (iL > ilMax) {
+                        iL = ilMax;
+                    }
+                    if (iT < 0) {
+                        iT = 0;
+                    } else if (iT > itMax) {
+                        iT = itMax;
+                    }
+
+                    view.style.left = iL + 'px';
+                    view.style.top = iT + 'px';
+
+                    // 大圖移動
+                    let bigImgmoveL = iL * (lBoxImg.offsetWidth - lBox.offsetWidth) / ilMax;
+                    let bigImgmoveT = iT * (lBoxImg.offsetHeight - lBox.offsetHeight) / itMax;
+                    lBoxImg.style.left = -bigImgmoveL + 'px';
+                    lBoxImg.style.top = -bigImgmoveT + 'px';
+
+                }
+
+
+
+
+            }
+
+        } 
+
+    </script>
+</body>
+</html>
